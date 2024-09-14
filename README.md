@@ -7,9 +7,13 @@ Recall Rally is a fun and challenging memory game designed to test your recall a
 ## How to Play:
 
 -> Start the Game: Click the "Start" button to begin the game.
+
 -> Observe the Flashing Box: Pay close attention to the box that flashes.
+
 -> Click the Correct Box: Click on the box that flashed in the correct sequence.
+
 -> Level Up: Successfully completing a sequence will advance you to the next level.
+
 -> Game Over: If you click on the wrong box, the game will end.
 
 ## Technologies Used:
@@ -24,10 +28,6 @@ Clone the Repository:
 `git clone https://github.com/DarshanKrishna-DK/Recall-Rally.git`
 
 Open the Index File: Navigate to the cloned directory and open the `index.html` file in a web browser.
-
-## Contributing:
-
-Contributions to this project are welcome! Feel free to fork the repository, make your changes, and submit a pull request.
 
 ## Areas for Improvement:
 
@@ -54,4 +54,8 @@ Contributions to this project are welcome! Feel free to fork the repository, mak
 5. Sound Effects:
    
         -> Incorporate sound effects to enhance the game's atmosphere and provide feedback.
+   
+## Contributing:
+
+Contributions to this project are welcome! Feel free to fork the repository, make your changes, and submit a pull request.
 
