@@ -31,27 +31,33 @@ function userFlash(btn) {
 
 function levelUp() {
     userSeq = [];
-    level++;
-    h2.innerText = `Level ${level}`
+    level++;
+    const instructionsDiv = document.querySelector(".instructions");
 
-    let randomIdx = Math.floor(Math.random() * 3);
-    let randomClr = btns[randomIdx];
-    let randomBtn = document.querySelector(`.${randomClr}`)
-    gameSeq.push(randomClr);
-    gameFlash(randomBtn);
+    instructionsDiv.innerText = `Level ${level}`
+
+    let randomIdx = Math.floor(Math.random() * 3);
+    let randomClr = btns[randomIdx];
+    let randomBtn = document.querySelector(`.${randomClr}`)
+    gameSeq.push(randomClr);
+    gameFlash(randomBtn);
 };
 
 function checkSeq(idx) {
-    // console.log(`Current level = ${level}`);
-    // let idx = level - 1;
-
     if (userSeq[idx] === gameSeq[idx]) {
         if (userSeq.length == gameSeq.length) {
             setTimeout(levelUp, 1000)
         }
     }
-    else {
-        h2.innerHTML = `GAME OVER! Your Score was <b>${level * 10}.</b> <br>Press any key to Restart.`;
+    else 
+    {
+        const instructionsDiv = document.querySelector(".instructions");
+
+        // Replace the entire content of the div
+        instructionsDiv.innerHTML = `
+        GAME OVER! Your Score was <b>${level * 10}.</b> <br>
+        Press any key to Restart.
+        `;        
         document.querySelector("body").style.backgroundColor = "red";
         setTimeout(function () {
             document.querySelector("body").style.backgroundColor = "#32706c";
@@ -64,9 +70,7 @@ function checkSeq(idx) {
 function btnPress() {
     let btn = this;
     userFlash(btn);
-
     userClr = btn.getAttribute("id");
-    // console.log(userClr);
     userSeq.push(userClr);
     checkSeq(userSeq.length - 1);
 }
