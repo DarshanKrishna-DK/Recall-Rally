@@ -32,15 +32,25 @@ Contributions to this project are welcome! Feel free to fork the repository, mak
 ## Areas for Improvement:
 
 1. UI/UX Enhancements:
+   
   -> Improve the overall visual appeal of the game.
+  
   -> Consider using more engaging animations or transitions.
+  
   -> Optimize the layout and spacing for a better user experience.
+  
 2. Instructional Button:
+   
   -> Add a button that allows users to read the instructions again if needed.
+  
 3. Highest Score Tracking:
+   
   -> Implement a system to track and display the user's highest achieved score.
+  
 4. Difficulty Levels:
+   
   -> Introduce different difficulty levels to cater to players of varying skill levels.
+  
 5. Sound Effects:
   -> Incorporate sound effects to enhance the game's atmosphere and provide feedback.
 
